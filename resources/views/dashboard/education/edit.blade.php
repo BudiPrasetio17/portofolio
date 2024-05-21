@@ -20,8 +20,8 @@
             <input type="text" class="form-control form-control-sm" id="info2" name="info2" placeholder="Nama Prodi" value="{{$data->info2}}">
         </div>
         <div class="mb-3">
-            <label for="info1" class="form-label">IPK</label>
-            <input type="text" class="form-control form-control-sm" id="info1" name="info1" placeholder="IPK" value="{{$data->info3}}">
+            <label for="info3" class="form-label">IPK</label>
+            <input type="text" class="form-control form-control-sm" id="info3" name="info3" placeholder="IPK" value="{{$data->info3}}">
         </div>
         <div class="mb-3">
            <div class="row">
