@@ -101,6 +101,24 @@
               <span class="menu-title">Education</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('skill.index')}}">
+              <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+              <span class="menu-title">Skill</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('profile.index')}}">
+              <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+              <span class="menu-title">Profile</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('pengaturanHalaman.index')}}">
+              <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+              <span class="menu-title">Pengaturan Halaman</span>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- partial -->
@@ -164,20 +182,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tokenfield/0.12.0/bootstrap-tokenfield.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  @if(@isset($skill))
-      <script>
-      $(document).ready(function() {
-          $('.skill').tokenfield({
-              autocomplete: {
-                  source: [{!! $skill !!}],
-                  delay: 100
-              },
-              showAutocompleteOnFocus: true
-          });
-      });
-  </script>
-  @endif
-    
+  @stack('child-script')
 
   <script>
     $(document).ready(function() {
